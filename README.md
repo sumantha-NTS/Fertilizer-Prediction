@@ -19,7 +19,7 @@ Finally,
     4. '20-20'
     5. '28-28'
     6. 'DAP'
-    7. 'Urea' \
+    7. 'Urea' 
 Exploratory data analysis carried out to fetch insights from the data.
 
 ## Algorithm :
