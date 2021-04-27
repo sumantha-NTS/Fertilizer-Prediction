@@ -10,9 +10,9 @@ Dataset consists of 8 variables where 7 variables are considered for predicting 
 4. Temperature : Temperature in degree censius. High temperatures affect plant growth in numerous ways. The most obvious are the effects of heat on photosynthesis, in which plants use carbon dioxide to produce oxygen, and respiration, an opposite process in which plants use oxygen to produce carbon dioxide.
 5. Humidity : Relative humidity in %. When conditions are too humid, it may promote the growth of mold and bacteria that cause plants to die and crops to fail, as well as conditions like root or crown rot. Humid conditions also invite the presence of pests, such as fungus gnats, whose larva feed on plant roots and thrive in moist soil.
 6. Soil Type : 
-7. Crop Type : 
+7. Crop Type : \
 Finally,
-8. Label : This is the output variable which contains 22 unique values i.e., 22 different crops and they are\ 
+8. Label : This is the output variable which contains 22 unique values i.e., 22 different crops and they are \ 
 ['10-26-26','14-35-14','17-17-17','20-20','28-28','DAP','Urea']\
 Exploratory data analysis carried out to fetch insights from the data.
 
