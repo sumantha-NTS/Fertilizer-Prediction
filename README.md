@@ -12,8 +12,7 @@ Dataset consists of 8 variables where 7 variables are considered for predicting 
 6. Soil Type : 
 7. Crop Type : \
 Finally,
-8. Label : This is the output variable which contains 22 unique values i.e., 22 different crops and they are \ 
-['10-26-26','14-35-14','17-17-17','20-20','28-28','DAP','Urea']\
+8. Label : This is the output variable which contains 22 unique values i.e., 22 different crops and they are ['10-26-26','14-35-14','17-17-17','20-20','28-28','DAP','Urea']\
 Exploratory data analysis carried out to fetch insights from the data.
 
 ## Algorithm :
