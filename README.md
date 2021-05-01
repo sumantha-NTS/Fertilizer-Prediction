@@ -1,6 +1,6 @@
 # Fertilizer-Prediction
 Predicting the type of fertilizer to be used depending on the crop type and soil type
-Dataset is taken from Kaggle. Link : https://www.kaggle.com/gdabhishek/fertilizer-prediction
+Dataset is taken from Kaggle.\ Link : https://www.kaggle.com/gdabhishek/fertilizer-prediction
 
 ## Variable Details:
 Dataset consists of 8 variables where 7 variables are considered for predicting output variable. The details of Variable is given Below
