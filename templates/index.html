@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Fertilizer Prediction</title>
+</head>
+<style>
+      input[type=submit] {
+          background-color: #0066A2;
+          border-color: #0066A2;
+          border-style: outset;
+          color: white;
+          border: 1px solid #eee;
+          border-radius: 10px;
+          padding: 12px 25px;
+          font: bold 20px arial, sans-serif;
+          margin: 4px 2px;
+          cursor: pointer;
+      }
+      input[type="number"] {
+          font-family:courier;
+          height: 20px;
+          width: 190px;
+          border-radius: 10px;
+          text-align: center;
+      }
+      input[type="number"]::placeholder {
+          font-weight: lighter;
+          text-align: center;
+      }
+      body {
+            background: linear-gradient(#f69d3c, #3f87a6);
+              }
+      h1 {
+          color: white;
+          text-shadow: 1px 1px 2px red, 0 0 25px black;
+      }
+      select {
+           width: 200px;
+           text-align-last:center;
+           border-radius: 10px;
+           font-family:courier;
+           font-size:15px;
+           font-weight: bold;
+           height: 25px;
+      }
+    </style>
+<body style="text-align:center;">
+ <div>
+	<h1><u>Fertilizer Prediction</u></h1>
+     <h1>{{x}}</h1>
+
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('predict')}}" method="post" id="Home">
+
+        <label for="temp" style="font-size:130%;"><b>Temperature:</b></label><br>
+        <input type="number" name="temp" placeholder="Enter the value" required="required" /><br><br>
+
+        <label for="humid" style="font-size:130%;"><b>Humidity in %:</b></label><br>
+        <input type="number" name="humid" placeholder="Enter the value" required="required" /><br><br>
+
+        <label for="mois" style="font-size:130%;"><b>Moisture:</b></label><br>
+        <input type="number" name="mois" placeholder="Enter the value" required="required" /><br><br>
+
+        <label for="soil" style="font-size:130%;"><b>Soil Type:</b></label><br>
+        <select name="soil" id="soil" >
+            <option value=0>Black</option>
+            <option value=1>Clayey</option>
+            <option value=2>Loamy</option>
+            <option value=3>Red</option>
+            <option value=4>Sandy</option>
+        </select><br><br>
+
+        <label for="crop" style="font-size:130%;"><b>Crop Type:</b></label><br>
+        <select name="crop" id="crop" >
+            <option value=0>Barley</option>
+            <option value=1>Cotton</option>
+            <option value=2>Ground Nuts</option>
+            <option value=3>Maize</option>
+            <option value=4>Millets</option>
+            <option value=5>Oil Seeds</option>
+            <option value=6>Paddy</option>
+            <option value=7>Pulses</option>
+            <option value=8>Sugarcane</option>
+            <option value=9>Tobacco</option>
+            <option value=10>Wheat</option>
+        </select><br><br>
+
+        <label for="nitro" style="font-size:130%;"><b>Nitrogen:</b></label><br>
+        <input type="number" name="nitro" placeholder="Enter the value" required="required" /><br><br>
+
+        <label for="pota" style="font-size:130%;"><b>Pottasium:</b></label><br>
+        <input type="number" name="pota" placeholder="Enter the value" required="required" /><br><br>
+
+        <label for="phos" style="font-size:130%;"><b>Phosphorous:</b></label><br>
+        <input type="number" name="phos" placeholder="Enter the value" required="required" /><br><br>
+
+        <input type="submit" >
+    </form>
+ </div>
+
+</body>
+</html>
